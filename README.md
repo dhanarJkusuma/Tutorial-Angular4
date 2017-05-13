@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+Berikut adalah Source Code dari
+Tutorial membuat reactive form
+
+
 # BelajarForms
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
@@ -30,4 +33,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # Tutorial-Angular4
 Tutorial Angular 4 di MEDIUM
->>>>>>> 6af7867ec2a0448363257d265607fe21dfa96a47
+

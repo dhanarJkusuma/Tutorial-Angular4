@@ -1,32 +1,3 @@
 <h1>
   {{title}}
 </h1>
-
-<h3>Penggunaan Reactive Forms : </h3>
-<h5>Data Mahasiswa : </h5>
-<form novalidate [formGroup]="mahasiswa" (ngSubmit)="onSubmit(mahasiswa)">
-  <label>
-    <span>Nama Mahasiswa</span>
-    <input
-      type="text"
-      formControlName="nama_mhs"
-      placeholder="Nama Mahasiswa">
-  </label>
-  <div formGroupName="pendidikan">
-    <label>
-      <span>Fakultas</span>
-      <input
-        type="text"
-        formControlName="nama_fakultas"
-        placeholder="Fakultas">
-    </label>
-    <label>
-      <span>Program Studi</span>
-      <input
-        type="text"
-        formControlName="nama_prodi"
-        placeholder="Program Studi">
-    </label>
-  </div>
-  <button type="submit">Tambah Data</button>
-</form>

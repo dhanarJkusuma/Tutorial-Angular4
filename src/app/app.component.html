@@ -2,29 +2,32 @@
   {{title}}
 </h1>
 
-<h3>Penggunaan Reactive Forms : </h3>
+<h3>Penggunaan Template-driven Forms : </h3>
 <h5>Data Mahasiswa : </h5>
-<form novalidate [formGroup]="mahasiswa" (ngSubmit)="onSubmit(mahasiswa)">
+<form novalidate (ngSubmit)="onSubmit()">
   <label>
     <span>Nama Mahasiswa</span>
     <input
       type="text"
-      formControlName="nama_mhs"
+      [(ngModel)]="mahasiswa.nama_mhs"
+      [ngModelOptions]="{standalone: true}"
       placeholder="Nama Mahasiswa">
   </label>
-  <div formGroupName="pendidikan">
+  <div>
     <label>
       <span>Fakultas</span>
       <input
         type="text"
-        formControlName="nama_fakultas"
+        [(ngModel)]="mahasiswa.pendidikan.nama_fakultas"
+        [ngModelOptions]="{standalone: true}"
         placeholder="Fakultas">
     </label>
     <label>
       <span>Program Studi</span>
       <input
         type="text"
-        formControlName="nama_prodi"
+        [(ngModel)]="mahasiswa.pendidikan.nama_prodi"
+        [ngModelOptions]="{standalone: true}"
         placeholder="Program Studi">
     </label>
   </div>

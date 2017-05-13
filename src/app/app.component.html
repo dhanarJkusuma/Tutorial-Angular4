@@ -2,4 +2,9 @@
   {{title}}
 </h1>
 
-<app-example></app-example>
+<!-- Membuat sebuah form -->
+<input type="text" placeholder="Masukkan sebuah tulisan" [(ngModel)]="input_satu" />
+<!-- Tambahan -->
+<p>Anda memasukkan nilai : "{{ input_satu }}"</p>
+
+<app-example [nilai]="input_satu"></app-example>

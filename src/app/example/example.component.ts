@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-example',
@@ -7,12 +7,22 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ExampleComponent implements OnInit {
 
-  @Input() nilai : string
+  @Input() 
+  nilai : string
 
-  constructor() { }
+  @Output() 
+  reset : EventEmitter<string> = new EventEmitter<string>();
+
+  constructor() { 
+
+  }
 
   ngOnInit() {
     
+  }
+  
+  onReset(){
+    this.reset.emit("hello emit");
   }
 
 }

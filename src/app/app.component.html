@@ -7,4 +7,7 @@
 <!-- Tambahan -->
 <p>Anda memasukkan nilai : "{{ input_satu }}"</p>
 
-<app-example [nilai]="input_satu"></app-example>
+<app-example 
+  [nilai]="input_satu"
+  (reset)="onPencet($event)"
+></app-example>
